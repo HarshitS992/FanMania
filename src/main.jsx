@@ -7,16 +7,27 @@ import { extendTheme } from '@chakra-ui/react';
 import {mode} from '@chakra-ui/theme-tools';
 import { BrowserRouter } from 'react-router-dom';
 
-const styles={
-  global:(props) => ({
-    body:{
-      bg:mode("gray.100", "#000")(props),
-      color:mode("gray.800","whiteAlpha.900")(props),
-    }
-  })
-}
+// const styles={
+//   global:(props) => ({
+//     body:{
+//       bg:mode("gray.100", "#000")(props),
+//       color:mode("gray.800","whiteAlpha.900")(props),
+//     }
+//   })
+// }
+
+
+const styles = {
+  global: (props) => ({
+    body: {
+      bg: 'edede9',
+      color: 'black',
+    },
+  }),
+};
+
 const config = {
-  initialColorMode: 'dark',
+  initialColorMode: 'light',
   useSystemColorMode: false,
 }
 
@@ -33,3 +44,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     
   </React.StrictMode>,
 )
+
+
